@@ -5,8 +5,8 @@
   <link>https://tidalhss-star.github.io/bp-kr-pbn-sr-036</link>
   <description><![CDATA[클럽 - 공덕 클럽 추천 관련 최신 소식 및 가이드]]></description>
   <language>ko</language>
-  <pubDate>Wed, 10 Jun 2026 01:28:34 GMT</pubDate>
-  <lastBuildDate>Wed, 10 Jun 2026 01:28:34 GMT</lastBuildDate>
+  <pubDate>Wed, 10 Jun 2026 10:56:45 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 10:56:45 GMT</lastBuildDate>
   <atom:link href="https://tidalhss-star.github.io/bp-kr-pbn-sr-036/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
@@ -14,6 +14,13 @@
       <link>https://tidalhss-star.github.io/bp-kr-pbn-sr-036/posts/field_note-001-p035o8.html</link>
       <guid isPermaLink="true">https://tidalhss-star.github.io/bp-kr-pbn-sr-036/posts/field_note-001-p035o8.html</guid>
       <description><![CDATA[제목: 창작한 제목 | Apache Superset RC3의 위험과 삭제 이유 파헤치기 ### 관찰 기록열심히 Apache Superset을 사용해 보던 중, PyPI에서 Apache Superset 2.0 릴리스 전에 RC3 빌드가 사라졌습니다. 이는 제가 원하는 버]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Apache Superset RC3 삭제와 2.0 배포 전의 변화]]></title>
+      <link>https://tidalhss-star.github.io/bp-kr-pbn-sr-036/posts/field_note-002-1vpa8ld.html</link>
+      <guid isPermaLink="true">https://tidalhss-star.github.io/bp-kr-pbn-sr-036/posts/field_note-002-1vpa8ld.html</guid>
+      <description><![CDATA[## 구체적 니치 콘텐츠 작성 ### 주제Apache Superset 2.0 릴리스 전 PyPI에서 삭제된 RC3 빌드의 취약점과 삭제된 실제 이유 ### 맥락오픈소스 도구 취약점/변경점 / Kubernetes deprecated API #### 검색 의도 대응- RC]]></description>
       <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -57,6 +64,13 @@
       <guid isPermaLink="true">https://tidalhss-star.github.io/bp-kr-pbn-sr-036/posts/normal-3.html</guid>
       <description><![CDATA[]]></description>
       <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[공덕 클럽 추천 솔직 후기 — 3개월 써본 사람의 리얼 리뷰]]></title>
+      <link>https://tidalhss-star.github.io/bp-kr-pbn-sr-036/posts/review-001-1vpa8ld.html</link>
+      <guid isPermaLink="true">https://tidalhss-star.github.io/bp-kr-pbn-sr-036/posts/review-001-1vpa8ld.html</guid>
+      <description><![CDATA[### 포스트 DNA 9889b0fd #### 제목: 창작한 제목: "LLama 3.1의 RoPE theta 조절, Perplexity 변화와 어텐션 패턴 분석" 아, 진짜... Llama 3.1 모델의 RoPE theta 값을 변경해보았는데 그 안에서 Perplexi]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
