@@ -1,351 +1,349 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공덕 클럽 추천 | 정보 - 공덕 스트립트 클럽</title>
-    <meta name="description" content="공덕에서 가장 파격적인 클럽 경험을 선사합니다. 스트립트 클럽의 진정한 의미를 재정의하는 공덕 클럽 추천 No.1. 010-6279-0862로 지금 예약하세요.">
-    <meta name="keywords" content="공덕 클럽 추천, 공덕 클럽, 스트립트 클럽, 공덕 밤문화, 클럽, 공덕 유흥">
-    <meta name="bpaas-design-system" content="organic-stripe">
-    <meta name="bpaas-design-theme" content="kr-organic-stripe">
-    <link rel="canonical" href="https://gongdeok-club-review.link-hub.org/about.html">
-    <meta property="og:title" content="공덕 클럽 추천 | 정보 - 공덕 스트립트 클럽">
-    <meta property="og:description" content="공덕에서 가장 파격적인 클럽 경험을 선사합니다. 스트립트 클럽의 진정한 의미를 재정의하는 공덕 클럽 추천 No.1. 010-6279-0862로 지금 예약하세요.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background: #0a0a0a;
-            color: #f0f0f0;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
-            border-bottom: 2px solid #d4af37;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            letter-spacing: -1px;
-            color: #d4af37;
-            text-transform: uppercase;
-            text-decoration: none;
-        }
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-        .nav-links a {
-            color: #ccc;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover {
-            color: #d4af37;
-        }
-        .nav-cta {
-            background: #d4af37;
-            color: #0a0a0a;
-            padding: 10px 24px;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        .nav-cta:hover {
-            background: #e6c34a;
-            transform: scale(1.05);
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .hamburger span {
-            width: 30px;
-            height: 3px;
-            background: #d4af37;
-            border-radius: 2px;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background: #111;
-                padding: 20px;
-                text-align: center;
-                gap: 15px;
-                border-bottom: 2px solid #d4af37;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .nav-cta {
-                display: none;
-            }
-        }
-        .hero-info {
-            padding: 140px 0 60px;
-            text-align: center;
-            background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
-            border-bottom: 1px solid #2a2a2a;
-        }
-        .hero-info h1 {
-            font-size: 3.2rem;
-            font-weight: 900;
-            color: #d4af37;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-            margin-bottom: 15px;
-        }
-        .hero-info p {
-            font-size: 1.2rem;
-            color: #aaa;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-            padding: 60px 0;
-        }
-        .info-card {
-            background: #121212;
-            border: 1px solid #2a2a2a;
-            border-radius: 8px;
-            padding: 30px;
-            transition: all 0.3s;
-        }
-        .info-card:hover {
-            border-color: #d4af37;
-            transform: translateY(-5px);
-        }
-        .info-card h3 {
-            font-size: 1.5rem;
-            color: #d4af37;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .info-card p {
-            color: #bbb;
-            font-size: 0.95rem;
-            margin-bottom: 10px;
-        }
-        .info-card .highlight {
-            color: #f0f0f0;
-            font-weight: 700;
-        }
-        .section-title {
-            font-size: 2rem;
-            color: #d4af37;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            margin: 40px 0 30px;
-            text-align: center;
-        }
-        .faq-section {
-            padding: 40px 0 80px;
-        }
-        .faq-item {
-            border-bottom: 1px solid #2a2a2a;
-            padding: 20px 0;
-        }
-        .faq-item h4 {
-            font-size: 1.1rem;
-            color: #d4af37;
-            margin-bottom: 10px;
-            cursor: pointer;
-        }
-        .faq-item p {
-            color: #aaa;
-            font-size: 0.95rem;
-        }
-        .cta-banner {
-            background: linear-gradient(135deg, #d4af37 0%, #b8962e 100%);
-            padding: 50px 20px;
-            text-align: center;
-            border-radius: 8px;
-            margin: 40px 0;
-        }
-        .cta-banner h2 {
-            font-size: 2.2rem;
-            color: #0a0a0a;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            margin-bottom: 15px;
-        }
-        .cta-banner p {
-            font-size: 1.1rem;
-            color: #1a1a1a;
-            margin-bottom: 25px;
-        }
-        .cta-banner a {
-            display: inline-block;
-            background: #0a0a0a;
-            color: #d4af37;
-            padding: 15px 40px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            border-radius: 4px;
-            transition: all 0.3s;
-        }
-        .cta-banner a:hover {
-            background: #1a1a1a;
-            transform: scale(1.05);
-        }
-        footer {
-            background: #0a0a0a;
-            border-top: 1px solid #2a2a2a;
-            padding: 30px 0;
-            text-align: center;
-            color: #666;
-            font-size: 0.85rem;
-        }
-        .tel-link {
-            color: #d4af37;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        .tel-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>공덕 클럽 추천 | 정보 - 공덕 스트립트 클럽</title>
+ <meta name="description" content="공덕에서 가장 파격적인 클럽 경험을 선사합니다. 스트립트 클럽의 진정한 의미를 재정의하는 공덕 클럽 추천 No.1. 010-6279-0862로 지금 예약하세요.">
+ <meta name="keywords" content="공덕 클럽 추천, 공덕 클럽, 스트립트 클럽, 공덕 밤문화, 클럽, 공덕 유흥">
+ <link rel="canonical" href="https://gongdeok-club-review.link-hub.org/about.html">
+ <meta property="og:title" content="공덕 클럽 추천 | 정보 - 공덕 스트립트 클럽">
+ <meta property="og:description" content="공덕에서 가장 파격적인 클럽 경험을 선사합니다. 스트립트 클럽의 진정한 의미를 재정의하는 공덕 클럽 추천 No.1. 010-6279-0862로 지금 예약하세요.">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: 'Helvetica Neue', Arial, sans-serif;
+ background: #0a0a0a;
+ color: #f0f0f0;
+ line-height: 1.6;
+ min-height: 100vh;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ header {
+ background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+ border-bottom: 2px solid #d4af37;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ z-index: 1000;
+ }
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 15px 20px;
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+ .logo {
+ font-size: 1.8rem;
+ font-weight: 900;
+ letter-spacing: -1px;
+ color: #d4af37;
+ text-transform: uppercase;
+ text-decoration: none;
+ }
+ .nav-links {
+ display: flex;
+ gap: 30px;
+ list-style: none;
+ }
+ .nav-links a {
+ color: #ccc;
+ text-decoration: none;
+ font-size: 0.9rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ transition: color 0.3s;
+ }
+ .nav-links a:hover {
+ color: #d4af37;
+ }
+ .nav-cta {
+ background: #d4af37;
+ color: #0a0a0a;
+ padding: 10px 24px;
+ border-radius: 4px;
+ font-weight: 700;
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ text-decoration: none;
+ transition: all 0.3s;
+ }
+ .nav-cta:hover {
+ background: #e6c34a;
+ transform: scale(1.05);
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger span {
+ width: 30px;
+ height: 3px;
+ background: #d4af37;
+ border-radius: 2px;
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 70px;
+ left: 0;
+ width: 100%;
+ background: #111;
+ padding: 20px;
+ text-align: center;
+ gap: 15px;
+ border-bottom: 2px solid #d4af37;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .nav-cta {
+ display: none;
+ }
+ }
+ .hero-info {
+ padding: 140px 0 60px;
+ text-align: center;
+ background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+ border-bottom: 1px solid #2a2a2a;
+ }
+ .hero-info h1 {
+ font-size: 3.2rem;
+ font-weight: 900;
+ color: #d4af37;
+ text-transform: uppercase;
+ letter-spacing: -2px;
+ margin-bottom: 15px;
+ }
+ .hero-info p {
+ font-size: 1.2rem;
+ color: #aaa;
+ max-width: 700px;
+ margin: 0 auto;
+ }
+ .info-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+ gap: 40px;
+ padding: 60px 0;
+ }
+ .info-card {
+ background: #121212;
+ border: 1px solid #2a2a2a;
+ border-radius: 8px;
+ padding: 30px;
+ transition: all 0.3s;
+ }
+ .info-card:hover {
+ border-color: #d4af37;
+ transform: translateY(-5px);
+ }
+ .info-card h3 {
+ font-size: 1.5rem;
+ color: #d4af37;
+ margin-bottom: 15px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
+ .info-card p {
+ color: #bbb;
+ font-size: 0.95rem;
+ margin-bottom: 10px;
+ }
+ .info-card .highlight {
+ color: #f0f0f0;
+ font-weight: 700;
+ }
+ .section-title {
+ font-size: 2rem;
+ color: #d4af37;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ margin: 40px 0 30px;
+ text-align: center;
+ }
+ .faq-section {
+ padding: 40px 0 80px;
+ }
+ .faq-item {
+ border-bottom: 1px solid #2a2a2a;
+ padding: 20px 0;
+ }
+ .faq-item h4 {
+ font-size: 1.1rem;
+ color: #d4af37;
+ margin-bottom: 10px;
+ cursor: pointer;
+ }
+ .faq-item p {
+ color: #aaa;
+ font-size: 0.95rem;
+ }
+ .cta-banner {
+ background: linear-gradient(135deg, #d4af37 0%, #b8962e 100%);
+ padding: 50px 20px;
+ text-align: center;
+ border-radius: 8px;
+ margin: 40px 0;
+ }
+ .cta-banner h2 {
+ font-size: 2.2rem;
+ color: #0a0a0a;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ margin-bottom: 15px;
+ }
+ .cta-banner p {
+ font-size: 1.1rem;
+ color: #1a1a1a;
+ margin-bottom: 25px;
+ }
+ .cta-banner a {
+ display: inline-block;
+ background: #0a0a0a;
+ color: #d4af37;
+ padding: 15px 40px;
+ text-decoration: none;
+ font-weight: 700;
+ font-size: 1.1rem;
+ border-radius: 4px;
+ transition: all 0.3s;
+ }
+ .cta-banner a:hover {
+ background: #1a1a1a;
+ transform: scale(1.05);
+ }
+ footer {
+ background: #0a0a0a;
+ border-top: 1px solid #2a2a2a;
+ padding: 30px 0;
+ text-align: center;
+ color: #666;
+ font-size: 0.85rem;
+ }
+ .tel-link {
+ color: #d4af37;
+ text-decoration: none;
+ font-weight: 700;
+ }
+ .tel-link:hover {
+ text-decoration: underline;
+ }
+ </style>
   <meta property="og:url" content="https://gongdeok-club-review.link-hub.org/about.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">공덕클럽</a>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="/about">소개</a></li>
-                <li><a href="/info">정보</a></li>
-                <li><a href="/contact">연락처</a></li>
-            </ul>
-            <a href="tel:010-6279-0862" class="nav-cta">예약하기</a>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+ <header>
+ <nav>
+ <a href="/" class="logo">공덕클럽</a>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/about">소개</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/contact">연락처</a></li>
+ </ul>
+ <a href="tel:010-6279-0862" class="nav-cta">예약하기</a>
+ <div class="hamburger" onclick="toggleMenu()">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ </nav>
+ </header>
 
-    <section class="hero-info">
-        <div class="container">
-            <h1>공덕 클럽 정보</h1>
-            <p>진짜를 원한다면? 여기 다 있다. 공덕 스트립트 클럽의 모든 것.</p>
-        </div>
-    </section>
+ <section class="hero-info">
+ <div class="container">
+ <h1>공덕 클럽 정보</h1>
+ <p>진짜를 원한다면? 여기 다 있다. 공덕 스트립트 클럽의 모든 것.</p>
+ </div>
+ </section>
 
-    <section class="container">
-        <div class="info-grid">
-            <div class="info-card">
-                <h3>위치 & 접근성</h3>
-                <p><span class="highlight">주소:</span> 서울 마포구 공덕동 (구체적 주소는 예약 시 안내)</p>
-                <p><span class="highlight">교통:</span> 공덕역 5번 출구 도보 3분, 주차 가능</p>
-                <p><span class="highlight">운영시간:</span> 매일 20:00 ~ 05:00 (연중무휴)</p>
-            </div>
-            <div class="info-card">
-                <h3>입장 & 드레스코드</h3>
-                <p><span class="highlight">입장료:</span> 남성 50,000원 / 여성 무료 (사전 예약 시 할인)</p>
-                <p><span class="highlight">드레스코드:</span> 스마트 캐주얼 — 슬리퍼, 트레이닝복 금지</p>
-                <p><span class="highlight">연령:</span> 만 21세 이상 (신분증 필수)</p>
-            </div>
-            <div class="info-card">
-                <h3>시설 & 서비스</h3>
-                <p><span class="highlight">VIP 라운지:</span> 병 서비스, 전용 테이블, 개인 댄서</p>
-                <p><span class="highlight">사운드:</span> Funktion-One 시스템, 120dB 클럽급</p>
-                <p><span class="highlight">바:</span> 프리미엄 위스키, 샴페인, 칵테일 풀바</p>
-            </div>
-        </div>
+ <section class="container">
+ <div class="info-grid">
+ <div class="info-card">
+ <h3>위치 & 접근성</h3>
+ <p><span class="highlight">주소:</span> 서울 마포구 공덕동 (구체적 주소는 예약 시 안내)</p>
+ <p><span class="highlight">교통:</span> 공덕역 5번 출구 도보 3분, 주차 가능</p>
+ <p><span class="highlight">운영시간:</span> 매일 20:00 ~ 05:00 (연중무휴)</p>
+ </div>
+ <div class="info-card">
+ <h3>입장 & 드레스코드</h3>
+ <p><span class="highlight">입장료:</span> 남성 50,000원 / 여성 무료 (사전 예약 시 할인)</p>
+ <p><span class="highlight">드레스코드:</span> 스마트 캐주얼 — 슬리퍼, 트레이닝복 금지</p>
+ <p><span class="highlight">연령:</span> 만 21세 이상 (신분증 필수)</p>
+ </div>
+ <div class="info-card">
+ <h3>시설 & 서비스</h3>
+ <p><span class="highlight">VIP 라운지:</span> 병 서비스, 전용 테이블, 개인 댄서</p>
+ <p><span class="highlight">사운드:</span> Funktion-One 시스템, 120dB 클럽급</p>
+ <p><span class="highlight">바:</span> 프리미엄 위스키, 샴페인, 칵테일 풀바</p>
+ </div>
+ </div>
 
-        <div class="cta-banner">
-            <h2>지금 예약하고 특별한 밤을</h2>
-            <p>선착순 VIP 테이블 할인 — 전화 한 통이면 끝</p>
-            <a href="tel:010-6279-0862">010-6279-0862</a>
-        </div>
+ <div class="cta-banner">
+ <h2>지금 예약하고 특별한 밤을</h2>
+ <p>선착순 VIP 테이블 할인 — 전화 한 통이면 끝</p>
+ <a href="tel:010-6279-0862">010-6279-0862</a>
+ </div>
 
-        <h2 class="section-title">자주 묻는 질문</h2>
-        <div class="faq-section">
-            <div class="faq-item">
-                <h4>Q: 예약은 꼭 해야 하나요?</h4>
-                <p>A: 워크인도 가능하지만, 주말엔 대기 1시간 이상. 예약하면 바로 입장 + 테이블 보장. 전화 한 통이면 끝.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Q: 스트립트 쇼는 몇 시에 하나요?</h4>
-                <p>A: 매시 정각 메인 스테이지 쇼, 30분 간격으로 개인 퍼포먼스. 가장 핫한 타임은 자정부터 새벽 2시.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Q: 단체 예약이 가능한가요?</h4>
-                <p>A: 물론. 5인 이상 단체는 VIP 룸 할인 + 병 서비스 무료 업그레이드. 전화로 협의하자.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Q: 여성 손님도 많나요?</h4>
-                <p>A: 공덕 클럽 추천 No.1답게 남녀 비율 6:4. 여성 혼자 와도 환영, 여성 전용 존 있음.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Q: 주차는 어떻게 하나요?</h4>
-                <p>A: 건물 지하 주차장 2시간 무료. 초과 시 10분당 1,000원. 발렛 서비스도 가능 (예약 시)</p>
-            </div>
-        </div>
-    </section>
+ <h2 class="section-title">자주 묻는 질문</h2>
+ <div class="faq-section">
+ <div class="faq-item">
+ <h4>Q: 예약은 꼭 해야 하나요?</h4>
+ <p>A: 워크인도 가능하지만, 주말엔 대기 1시간 이상. 예약하면 바로 입장 + 테이블 보장. 전화 한 통이면 끝.</p>
+ </div>
+ <div class="faq-item">
+ <h4>Q: 스트립트 쇼는 몇 시에 하나요?</h4>
+ <p>A: 매시 정각 메인 스테이지 쇼, 30분 간격으로 개인 퍼포먼스. 가장 핫한 타임은 자정부터 새벽 2시.</p>
+ </div>
+ <div class="faq-item">
+ <h4>Q: 단체 예약이 가능한가요?</h4>
+ <p>A: 물론. 5인 이상 단체는 VIP 룸 할인 + 병 서비스 무료 업그레이드. 전화로 협의하자.</p>
+ </div>
+ <div class="faq-item">
+ <h4>Q: 여성 손님도 많나요?</h4>
+ <p>A: 공덕 클럽 추천 No.1답게 남녀 비율 6:4. 여성 혼자 와도 환영, 여성 전용 존 있음.</p>
+ </div>
+ <div class="faq-item">
+ <h4>Q: 주차는 어떻게 하나요?</h4>
+ <p>A: 건물 지하 주차장 2시간 무료. 초과 시 10분당 1,000원. 발렛 서비스도 가능 (예약 시)</p>
+ </div>
+ </div>
+ </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 공덕클럽 | 공덕 클럽 추천 No.1 | <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></p>
-            <p>스트립트 클럽의 진짜 — 규칙은 없다. 예약은 전화로.</p>
-        </div>
-    </footer>
+ <footer>
+ <div class="container">
+ <p>© 2025 공덕클럽 | 공덕 클럽 추천 No.1 | <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></p>
+ <p>스트립트 클럽의 진짜 — 규칙은 없다. 예약은 전화로.</p>
+ </div>
+ </footer>
 
-    <script>
-        function toggleMenu() {
-            const nav = document.querySelector('.nav-links');
-            nav.classList.toggle('active');
-        }
-    </script>
+ <script>
+ function toggleMenu() {
+ const nav = document.querySelector('.nav-links');
+ nav.classList.toggle('active');
+ }
+ </script>
 </body>
 </html>
