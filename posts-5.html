@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (5/5) · kr-pbn-sr-036</title>
+  <meta name="description" content="kr-pbn-sr-036에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://gongdeok-club-review.link-hub.org/posts-5.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: 'Helvetica Neue', Arial, sans-serif;
+ background: #0a0a0a;
+ color: #f0f0f0;
+ line-height: 1.6;
+ min-height: 100vh;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ header {
+ background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+ border-bottom: 2px solid #d4af37;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ z-index: 1000;
+ }
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 15px 20px;
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+ .logo {
+ font-size: 1.8rem;
+ font-weight: 900;
+ letter-spacing: -1px;
+ color: #d4af37;
+ text-transform: uppercase;
+ text-decoration: none;
+ }
+ .nav-links {
+ display: flex;
+ gap: 30px;
+ list-style: none;
+ }
+ .nav-links a {
+ color: #ccc;
+ text-decoration: none;
+ font-size: 0.9rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ transition: color 0.3s;
+ }
+ .nav-links a:hover {
+ color: #d4af37;
+ }
+ .nav-cta {
+ background: #d4af37;
+ color: #0a0a0a;
+ padding: 10px 24px;
+ border-radius: 4px;
+ font-weight: 700;
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ text-decoration: none;
+ transition: all 0.3s;
+ }
+ .nav-cta:hover {
+ background: #e6c34a;
+ transform: scale(1.05);
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger span {
+ width: 30px;
+ height: 3px;
+ background: #d4af37;
+ border-radius: 2px;
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 70px;
+ left: 0;
+ width: 100%;
+ background: #111;
+ padding: 20px;
+ text-align: center;
+ gap: 15px;
+ border-bottom: 2px solid #d4af37;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .nav-cta {
+ display: none;
+ }
+ }
+ .hero-info {
+ padding: 140px 0 60px;
+ text-align: center;
+ background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+ border-bottom: 1px solid #2a2a2a;
+ }
+ .hero-info h1 {
+ font-size: 3.2rem;
+ font-weight: 900;
+ color: #d4af37;
+ text-transform: uppercase;
+ letter-spacing: -2px;
+ margin-bottom: 15px;
+ }
+ .hero-info p {
+ font-size: 1.2rem;
+ color: #aaa;
+ max-width: 700px;
+ margin: 0 auto;
+ }
+ .info-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+ gap: 40px;
+ padding: 60px 0;
+ }
+ .info-card {
+ background: #121212;
+ border: 1px solid #2a2a2a;
+ border-radius: 8px;
+ padding: 30px;
+ transition: all 0.3s;
+ }
+ .info-card:hover {
+ border-color: #d4af37;
+ transform: translateY(-5px);
+ }
+ .info-card h3 {
+ font-size: 1.5rem;
+ color: #d4af37;
+ margin-bottom: 15px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
+ .info-card p {
+ color: #bbb;
+ font-size: 0.95rem;
+ margin-bottom: 10px;
+ }
+ .info-card .highlight {
+ color: #f0f0f0;
+ font-weight: 700;
+ }
+ .section-title {
+ font-size: 2rem;
+ color: #d4af37;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ margin: 40px 0 30px;
+ text-align: center;
+ }
+ .faq-section {
+ padding: 40px 0 80px;
+ }
+ .faq-item {
+ border-bottom: 1px solid #2a2a2a;
+ padding: 20px 0;
+ }
+ .faq-item h4 {
+ font-size: 1.1rem;
+ color: #d4af37;
+ margin-bottom: 10px;
+ cursor: pointer;
+ }
+ .faq-item p {
+ color: #aaa;
+ font-size: 0.95rem;
+ }
+ .cta-banner {
+ background: linear-gradient(135deg, #d4af37 0%, #b8962e 100%);
+ padding: 50px 20px;
+ text-align: center;
+ border-radius: 8px;
+ margin: 40px 0;
+ }
+ .cta-banner h2 {
+ font-size: 2.2rem;
+ color: #0a0a0a;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ margin-bottom: 15px;
+ }
+ .cta-banner p {
+ font-size: 1.1rem;
+ color: #1a1a1a;
+ margin-bottom: 25px;
+ }
+ .cta-banner a {
+ display: inline-block;
+ background: #0a0a0a;
+ color: #d4af37;
+ padding: 15px 40px;
+ text-decoration: none;
+ font-weight: 700;
+ font-size: 1.1rem;
+ border-radius: 4px;
+ transition: all 0.3s;
+ }
+ .cta-banner a:hover {
+ background: #1a1a1a;
+ transform: scale(1.05);
+ }
+ footer {
+ background: #0a0a0a;
+ border-top: 1px solid #2a2a2a;
+ padding: 30px 0;
+ text-align: center;
+ color: #666;
+ font-size: 0.85rem;
+ }
+ .tel-link {
+ color: #d4af37;
+ text-decoration: none;
+ font-weight: 700;
+ }
+ .tel-link:hover {
+ text-decoration: underline;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (5/5) · kr-pbn-sr-036">
+  <meta property="og:description" content="kr-pbn-sr-036에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://gongdeok-club-review.link-hub.org/posts-5.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <nav>
+ <a href="/" class="logo">공덕클럽</a>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/about">소개</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/contact">연락처</a></li>
+ </ul>
+ 
+ <div class="hamburger" onclick="toggleMenu()">
+ 
+ 
+ 
+ </div>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 92개 · 5/5 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0443.html">공덕 클럽 탐색과 예산 계획을 위한 정보</a>
+        <p class="post-item__summary">공덕은 주요 업무 및 주거 지역이 어우러져 다양한 유흥 옵션을 제공합니다. 특히 클럽은 활기찬 밤 문화를 즐기려는 이들에게 인기 있는 선택지입니다. 공덕 클럽은 각기 다른 음악 장르와 분위기를 지닐</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0444.html">공덕 클럽 추천 및 상권 분석 안내</a>
+        <p class="post-item__summary">공덕역 주변은 교통이 편리하고 오피스 빌딩이 밀집하여 퇴근 후 여가를 즐기는 문화가 발달해 있습니다. 최근 이 지역에서 야간 오락과 음악을 즐길 수 있는 공간을 찾는 수요가 늘어남에 따라 관련 정보</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0446.html">공덕 클럽 추천 정보와 야간 문화 가이드</a>
+        <p class="post-item__summary">공덕 지역에서 즐길 수 있는 야간 여가 활동은 독특한 분위기를 형성하고 있습니다. 공덕 클럽 추천 정보를 찾는 이들은 대개 음악이 어우러진 공간에서 스트레스를 해소하고자 합니다. 이 지역은 직장인들</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0447.html">공덕 클럽 및 주변 유흥 정보 안내</a>
+        <p class="post-item__summary">공덕은 마포와 여의도 사이의 활기찬 지역으로, 다양한 엔터테인먼트 시설이 밀집해 있습니다. 특히 밤문화를 찾는 분들을 위한 다채로운 클럽과 라운지 바가 이곳에 자리합니다. 각 업소는 고유의 콘셉트와</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0448.html">공덕 지역 클럽 선택 가이드</a>
+        <p class="post-item__summary">공덕 지역은 다양한 문화 공간으로, 저녁 시간을 즐기려는 분들께 여러 선택지를 제공합니다. 클럽이나 바를 방문할 때는 지역 특성을 이해하고 가는 것이 중요합니다. 이 가이드는 공덕 지역에서 클럽을 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-002-p035o8.html">클럽 해결 방법 총정리</a>
+        <p class="post-item__summary">공덕 지역에서 클럽 문화를 즐기고 싶어 하는 분들이 늘어나고 있습니다. 하지만 처음 방문하거나 정보가 부족한 상태라면 어디서부터 어떻게 시작해야 할지 막막할 수 있습니다. 이번 시간에는 공덕 클럽 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">공덕 클럽 추천 정보 안내</a>
+        <p class="post-item__summary">공덕 지역에는 다양한 클럽과 나이트라이프 시설이 위치해 있습니다. 클럽을 방문하기 전에는 해당 업소의 분위기, 입장 규모, 운영 형태 등 기본적인 정보를 미리 확인하는 것이 일반적입니다. 각 업소마</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">공덕역 인근에서 즐기는 세련된 바이닐 음악과 하이볼의 조화</a>
+        <p class="post-item__summary">공덕 지역에서 클럽 문화의 활기찬 분위기와 차분한 휴식을 동시에 경험하고 싶다면, 음악적 취향이 짙게 배어있는 바이닐 바 형태의 공간들을 주목해 보십시오. 단순히 음악을 크게 틀어놓는 곳이 아니라,</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">공덕의 밤을 책임지는 로컬 라운지 바, 뮤직 펍의 매력</a>
+        <p class="post-item__summary">공덕역 인근은 직장인들의 회식 장소로 유명하지만, 밤이 깊어질수록 색다른 분위기를 찾는 이들을 위한 숨은 공간들이 존재합니다. 대규모 댄스 클럽보다는 음악과 술, 그리고 사람들과의 가벼운 소통을 즐</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">공덕에서 즐기는 세련된 하이볼과 올드팝의 조화</a>
+        <p class="post-item__summary">공덕역 인근에서 너무 시끄러운 분위기보다는 세련된 음악과 함께 가볍게 술 한잔 즐길 수 있는 공간을 찾는다면, 경의선 숲길 끝자락에 위치한 LP 테마의 클럽형 바를 주목해 볼 필요가 있습니다. 이곳</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">공덕에서 즐기는 감각적인 LP 바와 음악 라운지 탐방</a>
+        <p class="post-item__summary">공덕역 인근은 직장인들의 퇴근길 명소로 유명하지만, 활기찬 분위기 속에서 음악을 즐기며 밤을 보낼 수 있는 숨겨진 클럽과 라운지 공간들이 곳곳에 자리하고 있습니다. 특히 단순히 술을 마시는 곳을 넘</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-001-1vpa8ld.html">공덕에서 조용한 혼술을 찾는다면 여긴 피해야 한다</a>
+        <p class="post-item__summary">공덕 일대에서 밤마다 사람이 몰리는 클럽들을 보고 있으면 참 희한하다는 생각이 든다. 남들이 다들 화려한 조명 아래서 몸을 흔들며 스트레스를 풀어야 한다고 믿을 때, 나는 오히려 그런 북적거림이 정</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <a class="pager__link" href="posts-3.html">3</a>
+      <a class="pager__link" href="posts-4.html">4</a>
+      <span class="pager__current">5</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
